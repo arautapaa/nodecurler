@@ -1,0 +1,16 @@
+json={
+	"name" : "Nosturi",
+	"description" : "Website of famous venue in Helsinki",
+	"url" : "http://localhost:7777/elmu.html", // locally saved html source of the ELMU Ry (http://elmu.fi)
+	"entryselector" : ".view-keikat .keikkainfo",
+	"attributes" : [{
+		"name" : "artist",
+		"selector" : ".artistit .artisti"
+	}, {
+		"name" : "price",
+		"selector" : ".tiedot .hinta"
+	}, {
+		"name" : "date",
+		"selector" : ".tiedot > .date-display-single"
+	}]
+}

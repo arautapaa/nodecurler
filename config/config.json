@@ -1,0 +1,11 @@
+{
+	"development" : {
+		"connection" : {
+			"host" : "localhost",
+			"port" : 8888
+		},
+		"mongo" : {
+			"url": "mongodb://localhost:27017/test"
+		}
+	}
+}

@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<!-- Sorry no IE7 support! -->
+<!-- @see http://foundation.zurb.com/docs/index.html#basicHTMLMarkup -->
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="http://elmu.fi/sites/default/themes/elmu_foundation/favicon.ico" />
+<meta http-equiv="ImageToolbar" content="false" />
+<meta name="viewport" content="width=device-width, maximum-scale = 1.0" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="image_src" href="http://elmu.fi/sites/elmu.fi/themes/elmu_foundation/images/nosturi_logo.png" />
+<meta name="rights" content="Elmu Ry 2014" />
+<link rel="canonical" href="http://elmu.fi/" />
+<link rel="shortlink" href="http://elmu.fi/" />
+<meta property="og:site_name" content="Nosturi" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://elmu.fi/" />
+<meta property="og:title" content="Nosturi" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="http://elmu.fi/" />
+<meta name="twitter:title" content="Nosturi" />
+<meta name="dcterms.title" content="Nosturi" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://elmu.fi/" />
+  <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat: 800,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,700italic' rel='stylesheet' type='text/css'>
+  <title>Nosturi |</title>
+  <link rel="stylesheet" href="http://elmu.fi/sites/default/files/css/css_kShW4RPmRstZ3SpIC-ZvVGNFVAi0WEMuCnI0ZkYIaFw.css" />
+<link rel="stylesheet" href="http://elmu.fi/sites/default/files/css/css_bsFWsnSO5cZes6ixZKoIK0wfpgb4hIjl2KVHCVADhhk.css" />
+<link rel="stylesheet" href="http://elmu.fi/sites/default/files/css/css_AHlw14HntnX7rb2SZ_kEd2JbABxQjwG6dL7xY7XIK6I.css" />
+<link rel="stylesheet" href="http://elmu.fi/sites/default/files/css/css_qkqJwiIEQ7SDSJ5GOnRR2ujCloGSCaOYeonY-Au_ox0.css" />
+  <script src="http://elmu.fi/sites/default/files/js/js_gPM6NXOQjN2XM2JWQGfy07nKmcdDFrL289YA7h80ySs.js"></script>
+<script src="http://elmu.fi/sites/default/files/js/js_LkbnWRHkd1qRSn50pmHiZ8ZJJfjybBCq7qvSJHAEJuU.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-72015623-1", {"cookieDomain":".elmu.fi"});ga("send", "pageview");</script>
+<script src="http://elmu.fi/sites/default/files/js/js_4lYeY6E5zeARk9RwRDf7By5Cy9QqSFa0N5PphC8vE8Y.js"></script>
+<script src="http://elmu.fi/sites/default/files/js/js_AVWL4MgsvBHxdNSF_NHkWHCLw_qd4BWmj67kkvToTTI.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"elmu_foundation","theme_token":"hdl6l7NBG3uLr8E58MSRhCBsXF4EYCLPNsr18Wbgys8","js":{"sites\/default\/modules\/flexslider\/assets\/js\/flexslider.load.js":1,"profiles\/elmu_julkinen\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/elmu_julkinen\/libraries\/colorbox\/jquery.colorbox-min.js":1,"profiles\/elmu_julkinen\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"profiles\/elmu_julkinen\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"http:\/\/code.jquery.com\/jquery-migrate-1.2.1.js":1,"profiles\/elmu_julkinen\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/default\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/default\/themes\/elmu_foundation\/js\/vendor\/custom.modernizr.js":1,"sites\/default\/themes\/elmu_foundation\/js\/foundation.min.js":1,"sites\/default\/themes\/elmu_foundation\/js\/foundation\/foundation.reveal.js":1,"sites\/default\/themes\/elmu_foundation\/js\/scripts.js":1,"sites\/default\/themes\/elmu_foundation\/js\/faq.js":1,"sites\/default\/themes\/elmu_foundation\/ckeditor.styles.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/domain\/domain_nav\/domain_nav.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/video_filter\/video_filter.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/views\/css\/views.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"profiles\/elmu_julkinen\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/default\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/default\/libraries\/flexslider\/flexslider.css":1,"profiles\/elmu_julkinen\/themes\/contrib\/zurb-foundation\/css\/normalize.css":1,"sites\/default\/themes\/elmu_foundation\/css\/foundation.min.css":1,"sites\/default\/themes\/elmu_foundation\/css\/elmu_valiaikainen.css":1,"sites\/default\/themes\/elmu_foundation\/css\/app.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"video_filter":{"url":{"ckeditor":"\/video_filter\/dashboard\/ckeditor"},"instructions_url":"\/video_filter\/instructions","modulepath":"profiles\/elmu_julkinen\/modules\/contrib\/video_filter"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1,"trackDomainMode":"1"},"urlIsAjaxTrusted":{"\/":true},"flexslider":{"optionsets":{"default":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":true,"video":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":7000,"directionNav":true,"controlNav":true,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"instances":{"flexslider-1":"default"}}});</script>
+  <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="html front not-logged-in no-sidebars page-node domain-nosturi-elmu-fi lang-en" >
+  <div class="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!--.page -->
+<div role="document" class="page">
+
+<!--.l-header region -->
+<header role="banner" class="l-header">
+  <!-- Header -->
+  <div class="row hide-for-small headerrow">
+    <div class="small-12 medium-6 large-5 columns">
+              <ul class="header"><li class="first"><a href="http://ry.elmu.fi/" class="noactive link">Elmu</a></li>
+<li><a href="http://elmu.fi/" class="active link">Nosturi</a></li>
+<li><a href="http://elmunbaari.fi/" class="noactive link">Elmun Baari</a></li>
+<li class="last"><a href="http://matkailu.elmu.fi/" class="noactive link">Matkailu</a></li>
+</ul>          </div>
+    <div class="small-12 medium-6 large-7 columns">
+      <ul class="header right">
+        <li><a href="/" class="link">FI</a></li>
+        <li><a href="/english" class="link">EN</a></li>
+        <li><a href="/deutsch" class="link">DE</a></li>
+        <li><a href="/svenska" class="link">SWE</a></li>
+        <li>
+          <form id="hakulomake" style="display: inline;">
+            <input id="hakukentta" class="haku" name="teksti" type="text" value="Hae sivustolta">
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+<!-- End Header-->
+
+<!-- nav bar for medium/large screens -->
+
+<div class="row nav">
+      <!--.top-bar -->
+          <div class="hide-for-small contain-to-grid sticky">
+        <nav class="top-bar" data-topbar  data-options="back_text:'&lt;&lt; takaisin'">
+      <ul class="title-area">
+        <li class="name"><a href="/"><img class="logo" src="/sites/default/themes/elmu_foundation/images/nosturi_logo.png" alt="Nosturi logo" title="Nosturi Home"/></a></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+                  <ul id="main-menu" class="main-nav left"><li class="first expanded has-dropdown"><a href="/keikkakavijalle-0">Keikkakävijälle</a><ul class="dropdown"><li class="first expanded show-for-small"><a href="/keikkakavijalle-0">Keikkakävijälle</a><li class="first leaf" title=""><a href="/keikat" title="">Keikat</a></li><li class="leaf"><a href="/keikkakavijalle/liput">Liput</a></li><li class="leaf"><a href="/keikkakavijalle/usein-kysytyt-kysymykset">UKK</a></li><li class="last leaf"><a href="/keikkakavijalle/edut-jasenille">Edut jäsenille</a></li></ul></li><li class="leaf" title=""><a href="/kuvagalleria" title="">Galleria</a></li><li class="leaf"><a href="/medialle">Medialle</a></li><li class="expanded has-dropdown"><a href="/tilat">Tilat</a><ul class="dropdown"><li class="expanded show-for-small"><a href="/tilat">Tilat</a><li class="first leaf"><a href="/tilat/nosturin-esittely">Nosturin sali</a></li><li class="leaf"><a href="/tilat/elmun-baari">Elmun baari</a></li><li class="leaf"><a href="/tilat/tilavuokraus">Tilavuokraus</a></li><li class="last leaf"><a href="/tilat/tekniset-tiedot">Tekniset tiedot</a></li></ul></li><li class="last expanded has-dropdown"><a href="/yhteystiedot">Yhteystiedot</a><ul class="dropdown"><li class="last expanded show-for-small"><a href="/yhteystiedot">Yhteystiedot</a><li class="first last leaf" title=""><a href="/ota-yhteytta" title="">Ota yhteyttä</a></li></ul></li></ul>                      </section>
+    </nav>
+          </div>
+        <!--/.top-bar -->
+  </div>
+
+<!-- End nav bar for medium/large screens -->
+
+<!-- nav bar for small screens -->
+
+<div class="row mobile_nav">
+      <!--.top-bar -->
+          <div class="show-for-small contain-to-grid sticky">
+        <nav class="top-bar" data-topbar  data-options="back_text:'&lt;&lt; takaisin'">
+      <ul class="title-area">
+        <li class="name"><h1><a href="/" rel="home" title="Nosturi Home" class="active">Nosturi</a></h1></li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <section class="top-bar-section">
+                  <ul class="sivut"><li class="first"><a href="http://ry.elmu.fi/" class="noactive link">Elmu</a></li>
+<li><a href="http://elmu.fi/" class="active link">Nosturi</a></li>
+<li><a href="http://elmunbaari.fi/" class="noactive link">Elmun Baari</a></li>
+<li class="last"><a href="http://matkailu.elmu.fi/" class="noactive link">Matkailu</a></li>
+</ul>                          <ul id="main-menu" class="main-nav left"><li class="first expanded has-dropdown"><a href="/keikkakavijalle-0">Keikkakävijälle</a><ul class="dropdown"><li class="first expanded show-for-small"><a href="/keikkakavijalle-0">Keikkakävijälle</a><li class="first leaf" title=""><a href="/keikat" title="">Keikat</a></li><li class="leaf"><a href="/keikkakavijalle/liput">Liput</a></li><li class="leaf"><a href="/keikkakavijalle/usein-kysytyt-kysymykset">UKK</a></li><li class="last leaf"><a href="/keikkakavijalle/edut-jasenille">Edut jäsenille</a></li></ul></li><li class="leaf" title=""><a href="/kuvagalleria" title="">Galleria</a></li><li class="leaf"><a href="/medialle">Medialle</a></li><li class="expanded has-dropdown"><a href="/tilat">Tilat</a><ul class="dropdown"><li class="expanded show-for-small"><a href="/tilat">Tilat</a><li class="first leaf"><a href="/tilat/nosturin-esittely">Nosturin sali</a></li><li class="leaf"><a href="/tilat/elmun-baari">Elmun baari</a></li><li class="leaf"><a href="/tilat/tilavuokraus">Tilavuokraus</a></li><li class="last leaf"><a href="/tilat/tekniset-tiedot">Tekniset tiedot</a></li></ul></li><li class="last expanded has-dropdown"><a href="/yhteystiedot">Yhteystiedot</a><ul class="dropdown"><li class="last expanded show-for-small"><a href="/yhteystiedot">Yhteystiedot</a><li class="first last leaf" title=""><a href="/ota-yhteytta" title="">Ota yhteyttä</a></li></ul></li></ul>                <ul class="language">
+          <li><a href="/" class="l_link">FI</a></li>
+          <li><a href="/english" class="l_link">EN</a></li>
+          <li><a href="/deutsch" class="l_link">DE</a></li>
+          <li><a href="/svenska" class="l_link">SWE</a></li>
+          <li>
+            <form id="hakulomake_mob" style="display: inline;">
+              <input id="hakukentta_mob" class="haku" name="teksti" type="text" value="Hae sivustolta">
+            </form>
+          </li>
+        </ul>
+      </section>
+    </nav>
+          </div>
+        <!--/.top-bar -->
+  </div>
+
+<!-- End nav bar for small screens -->
+
+
+<!--main-->
+
+<main role="main" class="row l-main">
+
+<!-- picture gallery -->
+<div class="row kuvagalleria">
+  <div class="small-12 columns">
+    <div class="view view-etusivu-nostokuvat view-id-etusivu_nostokuvat view-display-id-block_etusivukuva view-dom-id-">
+        
+  
+  
+      <div class="view-content">
+      <div  id="flexslider-1" class="flexslider">
+  <ul class="slides"><li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/decapitated-pl-vader-pl-thy-disease-pl"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_deca.jpg?itok=QGGTWu0H" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">16.5.</span> <a href="/keikat/decapitated-pl-vader-pl-thy-disease-pl">DECAPITATED (PL) / VADER (PL) / THY DISEASE (PL)</a></div>
+<div class="teksti"><p>Liput myynnissä nyt!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/202721" target="_blank" title="Osta liput: DECAPITATED (PL) / VADER (PL) / THY DISEASE (PL)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/phil-rudd-au"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_phil.jpg?itok=WHvZV1CN" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">15.4.</span> <a href="/keikat/phil-rudd-au">PHIL RUDD (AU)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201875" target="_blank" title="Osta liput: PHIL RUDD (AU)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/rahina-special-bradi-spekti-uniikki-nelli-matula"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_bannei_rahina.jpg?itok=UfJQFH_h" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">12.5.</span> <a href="/keikat/rahina-special-bradi-spekti-uniikki-nelli-matula">Rähinä Special (BRÄDI, SPEKTI, UNIIKKI, NELLI MATULA)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201875" target="_blank" title="Osta liput: Rähinä Special (BRÄDI, SPEKTI, UNIIKKI, NELLI MATULA)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/asking-alexandria-uk"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/aa_banneri.jpg?itok=Heil6OB1" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">21.3.</span> <a href="/keikat/asking-alexandria-uk">ASKING ALEXANDRIA (UK) / THE WORD ALIVE (USA) / BOHEMIAN GROVE (UK)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/189547" target="_blank" title="Osta liput: ASKING ALEXANDRIA (UK) / THE WORD ALIVE (USA) / BOHEMIAN GROVE (UK)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/elmun-vappufanfaari-martti-servo-napander"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/servo_bennri.jpg?itok=lvehBijV" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">29.4.</span> <a href="/keikat/elmun-vappufanfaari-martti-servo-napander">Elmun vappufanfaari (MARTTI SERVO &amp; NAPANDER)</a></div>
+<div class="teksti"><p>MARTTI SERVO &amp; NAPANDER!<br />
+Liput myynnissä pe 17.2. alkaen!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201297" target="_blank" title="Osta liput: Elmun vappufanfaari (MARTTI SERVO &amp;amp; NAPANDER)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/rocknroll-circus"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu-banneri.jpg?itok=ln3TRB4B" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">20.5.</span> <a href="/keikat/rocknroll-circus">&quot;Rock´n´roll Circus&quot;</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201125" target="_blank" title="Osta liput: &amp;quot;Rock´n´roll Circus&amp;quot;">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/bry-irl"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/bryyy.jpg?itok=16e9CZor" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">4.5.</span> <a href="/keikat/bry-irl">BRY (IRL)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/artist/nosturi-lippuja/977685" target="_blank" title="Osta liput: BRY (IRL)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/matenrou-opera-jap"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_2.jpg?itok=1WrnWuG6" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">30.6.</span> <a href="/keikat/matenrou-opera-jap">MATENROU OPERA (JAP)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/200489" target="_blank" title="Osta liput: MATENROU OPERA (JAP)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/anna-abreu"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri-anna.jpg?itok=jNnIyQol" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">24.3.</span> <a href="/keikat/anna-abreu">ANNA ABREU</a></div>
+<div class="teksti"><p>Liput Ticketmasterista 25.1. alkaen!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/199607" target="_blank" title="Osta liput: ANNA ABREU">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/machinae-supremacy-swe-blind-channel-one-morning-left"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_0.jpg?itok=AGzJJqma" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">27.5.</span> <a href="/keikat/machinae-supremacy-swe-blind-channel-one-morning-left">MACHINAE SUPREMACY (SWE) / BLIND CHANNEL / ONE MORNING LEFT</a></div>
+<div class="teksti"><p>Liput myynnissä pe 20.1. alkaen!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/199357" target="_blank" title="Osta liput: MACHINAE SUPREMACY (SWE) / BLIND CHANNEL / ONE MORNING LEFT">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/mosh-vol-2-matter-summerheat"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/mosh_nosturi_1440_600.jpg?itok=x7nNezkD" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">6.5.</span> <a href="/keikat/mosh-vol-2-matter-summerheat">M.O.S.H. Vol. 2: Matter Of Summerheat</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first"><a href="http://www.ticketmaster.fi/event/mosh-lauantai-lippuja/198255" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+<li class="last"><a href="http://www.ticketmaster.fi/event/mosh-2paivaa-lippuja/198249" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/antti-tuisku"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_anatude.jpg?itok=5EI-4hRk" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">17.3.</span> <a href="/keikat/antti-tuisku">ANTTI TUISKU</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197543" target="_blank" title="Osta liput: ANTTI TUISKU">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/klamydia"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/klamppa_banneri.jpg?itok=7aFLkqOP" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">31.3.</span> <a href="/keikat/klamydia">KLAMYDIA</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197639" target="_blank" title="Osta liput: KLAMYDIA">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/perturbator-fra-carpenter-brut-fra-k-x-p-abyssion-king-satan-laserdrift"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_14.30.27.jpg?itok=VOhTL_Ds" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">14.4.</span> <a href="/keikat/perturbator-fra-carpenter-brut-fra-k-x-p-abyssion-king-satan-laserdrift">PERTURBATOR (FRA) / CARPENTER BRUT (FRA) / K-X-P / ABYSSION / KING SATAN / LASERDRIFT</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197405" target="_blank" title="Osta liput: PERTURBATOR (FRA) / CARPENTER BRUT (FRA) / K-X-P / ABYSSION / KING SATAN / LASERDRIFT">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/takida-swe-ryan-star-usa"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_takida.jpg?itok=XwS9MnF9" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">23.3.</span> <a href="/keikat/takida-swe-ryan-star-usa">TAKIDA (SWE) / RYAN STAR (USA)</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/196935" target="_blank" title="Osta liput: TAKIDA (SWE) / RYAN STAR (USA)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/korpiklaani-metsatoll-es"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_korpi.jpg?itok=iJo-dYZX" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">18.3.</span> <a href="/keikat/korpiklaani-metsatoll-es">KORPIKLAANI / METSATÖLL (ES) / CRIMFALL</a></div>
+<div class="teksti"><p>LIPUT TICKETMASTERISTA!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/196873" target="_blank" title="Osta liput: KORPIKLAANI / METSATÖLL (ES) / CRIMFALL">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/node/"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/eventmore_nosturi_banneri_1440x600px.png?itok=6UfHbPxa" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"> </div>
+<div class="teksti"><p>Nosturin ja Elmun Baarin keikat nyt suoraa puhelimessasi!<br />
+Lataa Nosturin oma kanava  Eventmoren kautta <a href="http://www.eventmore.io/app/nosturi/">TÄÄLTÄ!</a></p>
+</div>
+<div class="liput"></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/yari-se-tuntematon-numero"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_yari.jpg?itok=aFL2KfsI" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">11.3.</span> <a href="/keikat/yari-se-tuntematon-numero">YARI &amp; SE TUNTEMATON NUMERO / HULDA HUIMA</a></div>
+<div class="teksti"></div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/193801" target="_blank" title="Osta liput: YARI &amp;amp; SE TUNTEMATON NUMERO / HULDA HUIMA">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/monster-doublethe-69-eyes-reckless-love"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri_1.jpg?itok=GndgSz9T" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">25.3.</span> <a href="/keikat/monster-doublethe-69-eyes-reckless-love">Monster double: (THE 69 EYES, RECKLESS LOVE, DJ HiJinXX  (GER))</a></div>
+<div class="teksti"><p>THE 69 EYES  &amp; RECKLESS LOVE</p>
+<p>Liput myynnissä nyt!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/193659" target="_blank" title="Osta liput: Monster double: (THE 69 EYES, RECKLESS LOVE, DJ HiJinXX  (GER))">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/keikat/orange-goblin-uk-monolord-swe"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/elmu_banneri.jpg?itok=y82A4mgT" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"><span class="date-display-single">1.4.</span> <a href="/keikat/orange-goblin-uk-monolord-swe">ORANGE GOBLIN (UK) / MONOLORD (SWE)</a></div>
+<div class="teksti"><p>Liput myynnissä nyt!</p>
+</div>
+<div class="liput"><div class="item-list"><ul><li class="first last"><a href="https://www.ticketmaster.fi/event/192891" target="_blank" title="Osta liput: ORANGE GOBLIN (UK) / MONOLORD (SWE)">Osta lippuja</a></li>
+</ul></div></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/node/"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/bullhead_2_1280x720.jpg?itok=7-Ib79U0" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"> </div>
+<div class="teksti"><p>Ilmoittatuminen Wacken Open Air -festarimatkalle on alkanut!<br /><a href="http://matkailu.elmu.fi/wacken-open-air">Lisätietoja ja ohjeet täältä!</a></p>
+</div>
+<div class="liput"></div></div></li>
+<li>  
+  <div class="views-field views-field-field-nosto-kuva">        <div class="field-content"><a href="http://elmu.fi/node/"><img src="http://elmu.fi/sites/default/files/styles/etusivun_kuva/public/etusivun_nostot/nosturi_14_highres-3.jpg?itok=35l3TNJ9" width="1440" height="600" /></a></div>  </div><div class="flex-caption"><div class="otsikko"> </div>
+<div class="teksti"></div>
+<div class="liput"></div></div></li>
+</ul></div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+
+<!-- END picture gallery -->
+
+<!--  TAPAHTUMAT & INFO -->
+
+<div class="row infotapahtumat">
+  <div class="small-12 medium-12 large-12 columns">
+
+    <!--- info & uutiset for mobile -->
+
+    <div class="show-for-small">
+      <div class="row info-mobile">
+        <div class="small-12 columns" >
+          <h3 class="otsikko-mobile">INFOA</h3>
+          <div class="view view-etusivun-lohkot view-id-etusivun_lohkot view-display-id-etu_nosturi_elmu_fi view-dom-id-">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content">INFO</h3>  </div>  
+  <div class="views-field views-field-field-block-teksti">        <div class="field-content"><p>ETEISPALVELUMAKSU 3,00€<br /><strong>(Pssst! Ei peritä ELMU ry:n jäseniltä)</strong></p>
+<p> </p>
+<p>LIPUT ENNAKKOON:<br /><a href="http://www.ticketmaster.fi/venue/nosturi-helsinki-lippuja/nos/306"><img alt="" src="/sites/default/files/inline_kuvat/ticketmaster_whiteonblack_logo.jpg" style="height:50px; width:133px" /></a></p>
+<p>LÖYDÄ MEIDÄT:</p>
+<p><a href="https://www.facebook.com/nosturivenue/"><img alt="" src="/sites/default/files/inline_kuvat/thumb_nayttokuva_2016-9-8_kello_12.14.29.png" style="height:50px; width:50px" /></a>   <a href="https://www.instagram.com/nosturivenue/"><img alt="" src="/sites/default/files/inline_kuvat/thumb_nayttokuva_2016-9-8_kello_12.10.38.png" style="height:50px; width:50px" /></a>   <a href="https://www.snapchat.com/"><img alt="" src="/sites/default/files/inline_kuvat/snap.png" style="height:50px; width:50px" /></a>  <a href="http://www.eventmore.io/app/nosturi/"><img alt="" src="/sites/default/files/inline_kuvat/medium_eventmore.png" style="height:50px; width:50px" /></a></p>
+</div>  </div>  
+  <div class="views-field views-field-field-block-kuva">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content">ELMU FESTARIMATKAT</h3>  </div>  
+  <div class="views-field views-field-field-block-teksti">        <div class="field-content"><p><span style="font-size:16px"><strong><span style="font-size:14px">TUTUSTU ELMUN FESTARIMATKOIHIN </span></strong></span><br /><a href="http://matkailu.elmu.fi">Täältä!</a></p>
+<p> </p>
+<p>
+<span style="font-size:14px"><strong>Wacken Open Air 2017</strong></span><br /><a href="http://matkailu.elmu.fi/wacken-open-air">Ilmoittautumiset mukaan matkalle alkaneet!</a></p>
+</div>  </div>  
+  <div class="views-field views-field-field-block-kuva">        <div class="field-content"></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>        </div>
+        <div class="small-12 columns">
+          <h3 class="otsikko-mobile2">UUTISET</h3>
+          <div class="view view-uutiset view-id-uutiset view-display-id-block_uutiset view-dom-id-335ed33a62601bc209558d639ba38ae2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <span class="views-field views-field-title">        <span class="field-content"><a href="/uutiset/dramin-keikka-siirtyy-joulukuulle">D.R.A.M:in keikka siirtyy joulukuulle</a></span>  </span>  
+  <span class="views-field views-field-created">        <span class="field-content">15.2.</span>  </span>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/uutiset/dramin-keikka-siirtyy-joulukuulle">Lue lisää</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <span class="views-field views-field-title">        <span class="field-content"><a href="/uutiset/femmagaala-palaa-nosturille">FEMMAGAALA PALAA NOSTURILLE! </a></span>  </span>  
+  <span class="views-field views-field-created">        <span class="field-content">26.1.</span>  </span>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/uutiset/femmagaala-palaa-nosturille">Lue lisää</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="/uutiset">Katso kaikki uutiset</a></p>
+    </div>
+  
+  
+</div>        </div>
+        <div class="seuraa_mobile small-12 columns">
+          <div class="small-12 columns">
+          <h3 class="uutiskirje">TILAA UUTISKIRJE</h3>
+          <form class="mailchimp-signup-subscribe-form" action="/" method="post" id="mailchimp-signup-subscribe-block-uutiskirjeen-tilaus-form" accept-charset="UTF-8"><div><div class="mailchimp-signup-subscribe-form-description"></div><div id="mailchimp-newsletter-ea564a6a1e-mergefields" class="mailchimp-newsletter-mergefields"><div class="form-item form-type-emailfield form-item-mergevars-EMAIL">
+  <label for="edit-mergevars-email">Email Address <span class="form-required" title="This field is required.">*</span></label>
+ <input type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="128" class="form-text form-email required" />
+</div>
+</div><input type="hidden" name="form_build_id" value="form-K3zz1XzcjwAcVLxFJn0y46iudvUpmvPXk8889K4d0Wg" />
+<input type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_uutiskirjeen_tilaus_form" />
+<button class="secondary button radius form-submit" id="edit-submit" name="op" value="Tilaa" type="submit">Tilaa</button>
+</div></form>          </div>
+          <div class="small-12 columns">
+          <h3 class="otsikko">SEURAA NOSTURIA</h3>
+            <ul class="seuraalista">
+              <li><a class="link_icon twitter" href="https://twitter.com/Nosturi">twitter</a></li>
+              <li><a class="link_icon facebook" href="https://www.facebook.com/nosturivenue">facebook</a></li>
+              <li><a class="link_icon instagram" href="http://www.oninstagram.com/profile/nosturivenue">instagram</a></li>
+              <li><a class="link_icon rss" href="/keikat.rss">rss</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- end info for mobile -->
+
+    <div class="keikkapalkki small-12 medium-8 large-8 columns">
+      <div class="tulossa hide-for-small">
+        <h3>TULEVA OHJELMISTO</h3>
+      </div>
+
+      <!--- TAPAHTUMA -->
+
+          <div class="view view-keikat view-id-keikat view-display-id-block_keikat view-dom-id-f72225dc488ef06ca54118f81680cf68 nosturi-elmu-fi ">
+
+
+
+
+  <div class="view-content">
+    
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/yari-se-tuntematon-numero"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu-pikku_yari.jpg?itok=nf9ZRbcy" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 11.3.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              11,00/ 14,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/Yari-141313065914810/" class="artisti">YARI &amp; SE TUNTEMATON NUMERO</a>, <a href="https://www.facebook.com/Hulda-Huima-415917118468044/?fref=ts" class="artisti">HULDA HUIMA</a>          </div>
+          <div class="summary">
+            <p>Liput myynnissä 11.11. alkaen Ticketmasterista!</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1393">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/193801" target="_blank" title="Osta liput: YARI &amp;amp; SE TUNTEMATON NUMERO / HULDA HUIMA">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1185932258193269/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1393" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/yari-se-tuntematon-numero">YARI &amp; SE TUNTEMATON NUMERO / HULDA HUIMA</a></h2>
+  <p>SE -YHTYEEN KLASSIKOT  RAIKUVAT NOSTURILLA MAALISKUUSSA
+</p>
+<p>SE -yhtye tunnetaan 70-80-lukujen punk-maailman kummajaisena. Nämä ”hämypunkkarit” edustivat uuden punk-rockin aaltoa, rikkoen kolmen soinnun rämpytyksen traditiota, keulahahmonaan Yari. Yhtye jäi tauolle 1985. Nyt kuitenkin SE klassikot voi kuulla samalla keikalla Nosturissa lauantaina 11.3.2017. Yari on ryhdistänyt rivinsä keikkaa varten kootulla kokoonpanolla, missä nuorten jyväskyläismuusikoiden tuore energia yhdistetään punk-veteraanin ajattomiin tulkintoihin.
+</p>
+<p>La 11.03.2017, ovet 20:00, (S/K18)<br />
+YARI &amp; SE TUNTEMATON NUMERO<br />
+Liput: 11,50/ 14,00 € @ Ticketmaster Suomi</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-2 views-row-even">
+        <div class="row keikka loppuunmyyty ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/antti-tuisku"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/nayttokuva_2016-12-22_kello_8.57.16.png?itok=raa3ZHTm" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 17.3.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta loppuunmyyty ">
+              SOLD OUT            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://petoonirti.com/" class="artisti">ANTTI TUISKU</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1438">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197543" target="_blank" title="Osta liput: ANTTI TUISKU">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1820194938250569/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1438" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/antti-tuisku">ANTTI TUISKU</a></h2>
+  <p>NOSTURILLA PÄÄSTETÄÄN PETO IRTI MAALISKUUSSA
+</p>
+<p>Pitkä odotus palkitaan, kun Antti Tuisku astelee Nosturin lavalle maaliskuun 17. päivä. Suomen oma Enrique Iglesias tulee öljyämään lanteet ja nostattaa Helsingin Hietalahteen helleaallon kesken kolean kevään. Nauti, hymyile, tanssi ja rakasta! Keikalle myynnissä myös alaikäislippuja!
+</p>
+<p>Liput ovat myynnissä Ticketmastetissa torstaista 22.12. klo 09:00 alkaen.
+</p>
+<p>Pe 17.3.2017 @ Nosturi, Helsinki<br />
+ANTTI TUISKU<br />
+Liput 28,00 / 30,00 €<br />
+S/K18
+</p>
+<p>Liput myynnissä Ticketmastrissa 22.12. alkaen!
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-3 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/korpiklaani-metsatoll-es"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/korpiklaani.jpg?itok=eO5ZrI4F" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 18.3.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              19,50/ 20,00 €€            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://korpiklaani.com/" class="artisti">KORPIKLAANI</a>, <a href="http://www.metsatoll.ee/" class="artisti">METSATÖLL (ES)</a>, <a href="http://www.crimfall.com/site/" class="artisti">CRIMFALL</a>          </div>
+          <div class="summary">
+            <p>HUOMAA MUUTTUNUT OVIAIKA!</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1421">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/196873" target="_blank" title="Osta liput: KORPIKLAANI / METSATÖLL (ES) / CRIMFALL">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/660341607453162/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1421" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/korpiklaani-metsatoll-es">KORPIKLAANI / METSATÖLL (ES) / CRIMFALL</a></h2>
+  <p>Korpiklaani kiertää Suomessa lopputalvesta 2017
+</p>
+<p>Suomalaisen folk metal -musiikin kansainvälinen menestyjä Korpiklaani suuntaa maaliskuussa 2017 kiertueelle kotimaahan. Tampereelta alkava “V***u Soikoon Finnish Tour” liikkuu Helsingistä Ouluun ja poikkeaa myös Kuopiossa, Vaasassa ja Jyväskylässä. Kiertueen neljällä ensimmäisellä keikalla nähdään myös virolainen, tummasti groovaava ja mystinen Metsatöll.
+</p>
+<p>Pe 17.3.2017 Tampere, Yo-talo *<br />
+La 18.3.2017 Helsinki, Nosturi *<br />
+Pe 24.3.2017 Oulu, Hevimesta *<br />
+La 25.3.2017 Kuopio, Rauhalahden Kylpylä *<br />
+Pe 31.3.2017 Vaasa, WS-Arena<br />
+La 1.4.2017 Jyväskylä, Lutakko
+</p>
+<p>* Mukana myös Metsatöll (EST)
+</p>
+<p>Ennakkoliput myynnissä Nosturin keikalle Ticketmaster Suomessa. </p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-4 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/asking-alexandria-uk"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/nayttokuva_2017-02-23_kello_10.39.47.png?itok=4Vuus-Xg" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Tue 21.3.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              30,00/ 33,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://www.askingalexandria.com/" class="artisti">ASKING ALEXANDRIA (UK)</a>, <a href="http://www.wearethewordalive.com/" class="artisti">THE WORD ALIVE (USA)</a>, <a href="https://www.facebook.com/BohemianGroveUK/" class="artisti">BOHEMIAN GROVE (UK)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1317">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/189547" target="_blank" title="Osta liput: ASKING ALEXANDRIA (UK) / THE WORD ALIVE (USA) / BOHEMIAN GROVE (UK)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1317" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/asking-alexandria-uk">ASKING ALEXANDRIA (UK) / THE WORD ALIVE (USA) / BOHEMIAN GROVE (UK)</a></h2>
+  <p>ASKING ALEXANDRIA KAHDELLE KEIKALLE SUOMEEN<br />
+Ti 21.3.2017 Helsinki, Nosturi
+</p>
+<p>Aikaisemmin Suomessa ainoastaan loppuunmyydyssä The Circuksessa syksyllä 2014 vieraillut Asking Alexandria soittaa ensi keväänä klubikeikat Tampereella ja Helsingissä. Brittiläinen metalcore-yhtye nähdään Pakkahuoneella maanantaina 20. maaliskuuta, ja seuraavana iltana on vuorossa konsertti Nosturissa. Ikärajattomien tapahtumien liput tulevat myyntiin perjantaina 16. syyskuuta.
+</p>
+<p>Metalcoren ja post-hardcoren suosituimpiin yhtyeisiin jo vuosia kuuluneen Asking Alexandrian soundin ominaispiirteitä ovat raskaat riffi-vyörytykset, brutaalit breakdownit sekä poikkeuksellisen laaja-alaisen ääniskaalan omaavan uuden vokalistin Denis Stoffin laulusuoritukset. Huhtikuussa julkaistulla ”The Black” -nelosalbumillaan nykyisen kokoonpanonsa esitellyt brittiviisikko haki ajankohtaisella levyllään innoitusta paitsi Avenged Sevenfoldilta ja Bring Me The Horizonilta myös Guns N’ Rosesin ja Nine Inch Nailsin kaltaisilta pioneeriyhtyeiltä.
+</p>
+<p>Lähes koko loppuvuoden Pohjois-Amerikkaa kiertävä Asking Alexandria on ilmoittanut tuovansa molemmille Suomen-keikoilleen myöhemmin julkistettavat erikoisvieraat.
+</p>
+<p>Ti 21.3.2017 Helsinki, Nosturi<br />
+Ennakkoon Ticketmasterista alk. 29,50 EUR
+</p>
+<p>http://askingalexandria.com<br />
+www.facebook.com/askingalexandria<br />
+www.fullsteam.fi </p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-5 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/takida-swe-ryan-star-usa"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pieni_takida.jpg?itok=Jzw85BAy" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Thu 23.3.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              25,00/ 26,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://www.takidamusic.com/" class="artisti">TAKIDA (SWE)</a>, <a href="https://www.facebook.com/ryanstar/" class="artisti">RYAN STAR (USA)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1425">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/196935" target="_blank" title="Osta liput: TAKIDA (SWE) / RYAN STAR (USA)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/299559187107174/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1425" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/takida-swe-ryan-star-usa">TAKIDA (SWE) / RYAN STAR (USA)</a></h2>
+  <p>RUOTSALAISBÄNDI TAKIDA KIERTÄÄ SUOMEA MAALISKUUSSA
+</p>
+<p>Pohjoismaissa valtavaan suosioon noussut ruotsalaisbändi Takida saapuu keväällä kiertueelle Suomeen. Kotimaassaan platina- ja kultamyynteihin ja yli 150 miljoonan Spotify-striimauksiin yltänyt yhtye keikkailee 20. maaliskuuta alkaen Oulussa, Tampereella, Jyväskylässä, Helsingissä ja Turussa. Lämmittelijänä keikoilla nähdään Takidan uusimman levyn tuottanut amerikkalaisartisti Ryan Star. Lipunmyynti keikoille on käynnistynyt tänään. 
+</p>
+<p>Vuonna 1999 Pohjois-Ruotsin pienessä Ången kaupungissa perustettu Takida on kasvanut yhdeksi Pohjoismaiden isoimmista rock-bändeistä. Yhtye on pitänyt paikkaansa radioiden soittolistoilla ja myynyt loppuun isoja areenoita Pohjois-Euroopassa. Suomessa bändi on vieraillut viimeksi vuonna 2012, ja tuolloin yhtyeen keikat myytiin loppuun sekä Helsingissä että Vaasassa.
+</p>
+<p>Saavutettuaan suursuosion kotimaassaan, on Takida suunnannut katseensa myös Ruotsin ulkopuolelle. Tuoreimmalla albumillaan ”A Perfect World” Takida on tehnyt yhteistyötä amerikkalaisen laulaja-lauluntekijä-tuottaja Ryan Starin kanssa tähtäimenään kansainväliset areenat. Tarttuvia pop-koukkuja ja melodioita sisältävä albumi on ollutkin suurmenestys, ja se nousi julkaisunsa aikaan keväällä Ruotsin listaykköseksi. Levyn single ”Better” kasvoi Ruotsissa kesähitiksi keräten yli viisi miljoonaa striimauskertaa. Bändi myös tähditti yli 20 festivaalia kesällä.
+</p>
+<p>Takida (SE) + Special Guest: Ryan Star
+</p>
+<p>To 23.3.2017 Helsinki, Nosturi<br />
+Liput palvelumaksuineen alkaen 24,50 euroa Ticketmasterista. Ovelta 25 euroa mikäli lippuja on jäljellä.<br />
+Ikärajaton / K-18</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-6 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/anna-abreu"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/node_3.jpg?itok=q9fHpr_Q" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 24.3.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              16,50/ 17,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/annaabreuofficial/" class="artisti">ANNA ABREU</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1468">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/199607" target="_blank" title="Osta liput: ANNA ABREU">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1242079645886881/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1468" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/anna-abreu">ANNA ABREU</a></h2>
+  <p>ANNA ABREU LAUKAISEE VARASLÄHDÖN KESÄÄN MAALISKUUSSA NOSTURILLA
+</p>
+<p>Anna Abreun ura on ollut sen alkumetreistä lähtien huikeaa lentoa. Abreun debyyttialbumi Anna Abreu myi tuplaplatinaa ja Abreu on myös palkittu kahdesti vuoden naissolistiksi Emma-gaalassa. Laulukieli vaihtui englannista suomeksi kun järkälehitiksi noussut Bandana julkaistiin 2015.
+</p>
+<p>Sitä ennen nostetta suomenkielisestä materiaalista saatiin vuonna 2014 kun  Anna vieraili JVG:n Huominen on huomenna –kappaleella, joka nousi heti julkaisuistaan Spotifyn ykkössijalle ja kappaleen musiikkivideo oli vuoden 2015 katsotuin kotimainen video YouTubessa yli 10 miljoonalla katselukerralla.  
+</p>
+<p>”Sensuroimaton versio” –albumi julkaistiin 2016, ja se ylitti kultalevyrajan jo ennen julkaisupäiväänsä. Anna Abreu nähdään kevään ainoalla Helsingin keikalla Nosturissa 24.3. (Myös alle 18-vuotiaille oma alue).
+</p>
+<p>ANNA ABREU pe 24.3.2017 @ Nosturi, Helsinki<br />
+Ovet klo 19:00, ikäraja S/K18<br />
+Liput 16,50/ 17,00 € Ticketmasterista</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-7 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/monster-doublethe-69-eyes-reckless-love"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pieni_1.jpg?itok=-xbtPfTL" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 25.3.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              22,50/ 23,50 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/monster-doublethe-69-eyes-reckless-love">Monster double: (THE 69 EYES, RECKLESS LOVE, DJ HiJinXX  (GER))</a>              </div>
+                      
+          <div class="artistit">
+            <a href="http://www.69eyes.com/" class="artisti">THE 69 EYES</a>, <a href="http://www.recklesslove.com/" class="artisti">RECKLESS LOVE</a>, <a href="https://myspace.com/dj_hijinxx" class="artisti">DJ HiJinXX  (GER)</a>          </div>
+          <div class="summary">
+            <p>Liput myynnissä to 10.11. alkaen Ticketmasterissa!</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1388">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/193659" target="_blank" title="Osta liput: Monster double: (THE 69 EYES, RECKLESS LOVE, DJ HiJinXX  (GER))">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://facebook.com/events/370096839997109/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1388" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/monster-doublethe-69-eyes-reckless-love">Monster double: (THE 69 EYES, RECKLESS LOVE, DJ HiJinXX  (GER))</a></h2>
+  <p>MONSTER DOUBLE SAAPUU NOSTURILLE =<br />
+THE 69 EYES JA RECKLESS LOVE YHTEISKEIKALLA MAALISKUUSSA
+</p>
+<p>Piinaava odotus palkitaan ja faneille tarjoillaan maaliskuun 25. päivänä oikeaa rock-glamourin parhainta kaviaaria! Monster Double tuo Nosturin lavalle samana iltana kotimaisen synkän hard rockin soihdunkantajan The 69 Eyesin sekä kimmeltävän energiapaketin, kaikkien rakastaman Reckless Loven. Ilta tarjoilee syväluotaavia soundeja mystiikan maailmaan sekä villejä kitarariffejä flirttailevaan glam rock -malliin. Kukaan ei jää kylmäksi, kun nämä rokkikukot näyttävät mistä suomalainen rock´n´roll on taottu!
+</p>
+<p>La 25.3.2017, ovet 20:00, S/K18<br />
+Monster Double:<br />
+THE 69 EYES<br />
+RECKLESS LOVE<br />
+Liput 22,50/ 23,00 € @ Ticketmaster Suomi</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-8 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/klamydia"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/klamppa_banneri.jpg?itok=4BJGtwlJ" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 31.3.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              17,50/ 18,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://klamydia.fi/" class="artisti">KLAMYDIA</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1439">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197639" target="_blank" title="Osta liput: KLAMYDIA">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://facebook.com/events/297344480667477/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1439" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/klamydia">KLAMYDIA</a></h2>
+  <p>VAASAN PUNKKARIT KÖMPIVÄT NOSTURILLE MAALISKUUSSA
+</p>
+<p>Rehellistä punkin räimettä on tarjolla maaliskuun lopussa Klamydian astellessa asenteella Nosturin lavalle 31.3.2017. Pistä pogo -vaihde silmään ja tallustele mestoille. Keikalle ovat tervetulleita myös alaikäiset. Klamydia on tahkonnut punk rockia jo lähes kolmenkymmenen vuoden ajan eikä laiskuudesta voida bändiä syyttää. Levynjulkaisu- ja keikkailutahti ansaitsee kouluarvosanoilla 10+:san. Järjestyksessään 18. studiolbumi ”Antisupersankarit” näki päivän valon kuluvan vuoden 2016 syyskuussa. Nyt Vaasan kasvatit palaavat Nosturille usean vuoden tauon jälkeen.
+</p>
+<p>Pe 31.3.2017 @ Nosturi, Helsinki<br />
+KLAMYDIA<br />
+Liput 17,50/ 18,00€<br />
+Ovet 20:00,  (S/K18)
+</p>
+<p>Liput tulevat myyntiin Ticketmasteriin 22.12. alkaen!</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-9 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/orange-goblin-uk-monolord-swe"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pieni_0.jpg?itok=ZXkS5O-W" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 1.4.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              30,00/ 31,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://www.orange-goblin.com/" class="artisti">ORANGE GOBLIN (UK)</a>, <a href="http://monolord.com/" class="artisti">MONOLORD (SWE)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1375">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="https://www.ticketmaster.fi/event/192891" target="_blank" title="Osta liput: ORANGE GOBLIN (UK) / MONOLORD (SWE)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1505918242758658/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1375" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/orange-goblin-uk-monolord-swe">ORANGE GOBLIN (UK) / MONOLORD (SWE)</a></h2>
+  <p>ORANGE GOBLIN JA MONOLORD SUOMEEN KEVÄÄLLÄ
+</p>
+<p>Englantilainen, stoner rockin, doomin ja yleisesti 70-lukulaisen korkeaoktaanisen rockin parissa toimiva Orange Goblin palaa Suomeen vuosien tauon jälkeen. Edellisen kerran lontoolaisnelikko nähtiin Suomessa vuonna 2010. Orange Goblin nousee Nosturin lavalle 1. huhtikuuta.
+</p>
+<p>Yli kaksikymmenvuotisen uran tehnyt Orange Goblin perustettiin vuonna 1995 ja yhtye on ehtinyt julkaista jo kahdeksan stuodioalbumia, joista viimeisimpänä vuoden 2014 ”Back From The Abyss”.
+</p>
+<p>Täysipainoisen ja erittäin fuzz-pitoisen illan täydentää Göteborgista tuleva ja syvältä möyhivä Monolord. Ruotsalaisten viimeisin ”Vænir” -nimeä kantava albumi on loistavaa, yksinkertaisen jämäkkää ja tarttuvan raskasta riffittelyä omaperäisellä otteella höystettynä. Monolord vakuutti äskettäin suomalaisyleisön Helsingissä Blowup Vol 2 -festivaaleilla.
+</p>
+<p>Keikka on TuskaLive -konserttisarjaa.
+</p>
+<p>Orange Goblin &amp; Monolord -konsertti<br />
+La 01.04. Helsinki, Nosturi<br />
+Liput: alk. 29,50 €<br />
+Ennakot: Ticketmaster<br />
+Ovet 20:00 | Ikäraja S/K-18
+</p>
+<p>Lisätiedot:<br />
+www.tuska.fi/tuskalive<br />
+www.orange-goblin.com<br />
+www.facebook.com/orangegoblinofficial<br />
+monolord.com/<br />
+www.facebook.com/monolordsweden</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-10 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/perturbator-fra-carpenter-brut-fra-k-x-p-abyssion-king-satan-laserdrift"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pieni_3.jpg?itok=ysee6906" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 14.4.2017</span>            <div class="field-content"><span class="date-display-single">18:00</span></div>,
+            K18,
+            <span class="hinta ">
+              33,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/Perturbator/?fref=ts" class="artisti">PERTURBATOR (FRA)</a>, <a href="https://www.facebook.com/carpenter.brut/?fref=ts" class="artisti">CARPENTER BRUT (FRA)</a>, <a href="https://www.facebook.com/kxp.official/?fref=ts" class="artisti">K-X-P</a>, <a href="https://www.facebook.com/abyssionn/?fref=ts" class="artisti">ABYSSION</a>, <a href="https://www.facebook.com/kingsatan616/?fref=ts" class="artisti">KING SATAN</a>, <a href="https://www.facebook.com/laserdrift/?fref=ts" class="artisti">LASERDRIFT</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1434">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/197405" target="_blank" title="Osta liput: PERTURBATOR (FRA) / CARPENTER BRUT (FRA) / K-X-P / ABYSSION / KING SATAN / LASERDRIFT">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/646698455508379/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1434" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/perturbator-fra-carpenter-brut-fra-k-x-p-abyssion-king-satan-laserdrift">PERTURBATOR (FRA) / CARPENTER BRUT (FRA) / K-X-P / ABYSSION / KING SATAN / LASERDRIFT</a></h2>
+  <p>BLACK MASS Finland present:
+</p>
+<p>14.4.2017 NOSTURI, HELSINKI<br />
+Perturbator (FR) //// Carpenter Brut (FR)<br />
+K-X-P, Abyssion, Sink, King Satan, Laserdrift<br />
++ VJ Sellekhanks, VJ MMake
+</p>
+<p>Perturbator, eli ranskalaistuottaja ja metallin suurkuluttaja James Kent, tunnetaan tummanpuhuvasta elektronisesta musiikista, jossa yhdistyy 80-luvun retroestetiikka, cyberpunk- ja muu elokuvakuvasto sekä tekijän historia black metal –kitaristina. Kentin rumpukoneita ja syntetisaattoreita yhdistävä tuotanto yhdistää myös eri genreille vannoutuneita yleisöjä – Perturbatorin kuulijakuntaan lukeutuu niin metallin, teknon kuin urbaanin pop-musiikinkin ystäviä.
+</p>
+<p>Carpenter Brut lukeutuu niin ikään synthwaven tärkeimpiin vaikuttajiin. Metallin ja elektronisen musiikin maailmat yhdistävä Carpenter Brut on yhtä kuin ranskalainen tuottaja Franck Hueso sekä livekokoonpanossa esiintyvä kitaristi ja rumpali. Siviilipersoonastaan ja taustoistaan vähäpuheisen Hueson rakkaus metalliin on yksi Carpenter Brutin määrittävistä tekijöistä. Hueso pitää edustamaansa synkkää synthwavea mahdollisena metallin äpärälapsena. 
+</p>
+<p>Perturbatorin ja Carpenter Brutin aiempien Suomen keikkojen perusteella tulevan huhtikuun iltojen ennustetaan myyvän loppuun varsin ripeästi. 16.11.16 myyntiin tulevien lippujen ostoaikeiden kanssa ei kannata torkkua.
+</p>
+<p>Nosturin liput myy TICKETMASTER &amp;  TIKETTI<br />
+Lipunhinta 33,00 € // Ikäraja K18
+</p>
+<p>M I K R O F O N I _ P R O M O T I O N<br />
+akkreditointi / info: hans@mikrofoni.net</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-11 views-row-odd">
+        <div class="row keikka peruutettu ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/possessed-usa"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/posssss.jpg?itok=KBwPDbaQ" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 15.4.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta peruutettu ">
+              CANCELLED            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/666possessed/" class="artisti">POSSESSED (USA)</a>          </div>
+          <div class="summary">
+            <p>KEIKKA PERUTTU :(</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1455">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/198749" target="_blank" title="Osta liput: PERUUTETTU: POSSESSED (USA)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/175088316306031/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1455" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/possessed-usa">PERUUTETTU: POSSESSED (USA)</a></h2>
+  <p>Tärkeä tiedote:<br />
+POSSESSEDIN KEIKAT SUOMESSA JA EUROOPASSA PERUTTU!
+</p>
+<p>Amerikkalainen death metal -legenda Possessed joutuu perumaan kaikki huhtikuun 2017 keikkansa – mukaan lukien esiintymiset Suomessa. Tähän valitettavaan päätökseen ovat vaikuttaneet yhtyeen taustalla olevat henkilökohtaiset syyt. Possessed on tästä päätöksestä kovin pahoillaan ja kommentoi asiaa seuraavasti:<br />
+"These are the very first shows I have ever had to cancel in my entire career so it pains me immensely. Because of personal reasons we are unfortunately unable to make the Finnish shows. But we most definitely hope to make these shows at a later date. - Jeff Becerra/Possessed ”
+</p>
+<p>Kuten lausunnossa kerrotaan, yhtye toivoo soittavansa korvaavat keikat myöhemmin tulevaisuudessa, mutta ei toistaiseksi osaa antaa tarkempaa ajankohtaa ennen kuin tilanne on kääntynyt parempaan. Järjestäjä pahoittelee 
+</p>
+<p>***OHJEET LIPPUJEN PALAUTUSTA VARTEN***
+</p>
+<p>TICKETMASTER:<br />
+Pääsyliput voi käydä palauttamassa 15.4. mennessä Ticketmasterin täyden palvelun myyntipisteisiin (ei R-kioskit) tai postitse osoitteella: Ticketmaster Suomi, PL 667, 00100 Helsinki. Kuoreen tulee liittää pääsylippujen lisäksi nimesi, osoitteesi, puhelinnumerosi, pankkitilin IBAN numero sekä mahdollinen sähköpostiosoite. Ticketmasterin myyntipisteet löydät osoitteesta http://www.ticketmaster.fi/help/outlets.fi-fi.html . Ostetuista lipuista hyvitetään lipunhinta.<br />
+****</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-12 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/phil-rudd-au"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_phil.jpg?itok=FNILtR04" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 15.4.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              31,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://philruddmusic.com/" class="artisti">PHIL RUDD (AU)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1503">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201875" target="_blank" title="Osta liput: PHIL RUDD (AU)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1917465788473167/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1503" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/phil-rudd-au">PHIL RUDD (AU)</a></h2>
+  <p>ROCKRUMPALI-LEGENDA PHIL RUDD KEIKKAILEE HELSINGISSÄ HUHTIKUUSSA
+</p>
+<p>Suurten kollegoidensa, kuten Kenny Aronoffin (Mellencamp) ja Eric Singerin (Kiss) ylistämä Phil Rudd saapuu bändeineen Nosturille 15. päivä huhtikuuta. Phil Rudd tunnetaan parhaiten pitkästä historiastaan AC/DC:n rumpalina. Taannoin artisti julkaisi debyytti sooloalbuminsa "Head Job" vuonna 2014, minkä tiimoilta mies valtaa nyt Eurooppaa kahdeksan kuukauden kotiarestinsa jälkeen. Menneisyyden aaveet ovat vaihtuneet perheestä, ystävistä sekä etenkin musiikista nauttimiseen. Albumi on saanut mainiota palautetta ja itse maestrokin on jälkeen erittäin tyytyväinen. 
+</p>
+<p>"I'm so proud of the album, everything I had to do with it. The guys played really well on it, it's just too good. Really great, mate… I'm pretty happy with the drum sound “ -Phil Rudd-
+</p>
+<p>Ennakkoliput keikalle tulevat myyntiin perjantaina 24.2. Ticketmasteriin, hinta 31,00 € sisältäen käsittelymaksun. Keikka on sallittu, mutta tilassa on rajattu anniskelualue täysi-ikäisille.
+</p>
+<p>La 15.4.2017 @ Nosturi, Helsinki<br />
+PHIL RUDD (AU)<br />
+Liput ennakkoon Ticketmasterista 31,00 €<br />
+Ovet 20,00, S/K18</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-13 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/elmun-vappufanfaari-martti-servo-napander"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/image001.jpg?itok=0tqsVbM4" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 29.4.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            K18,
+            <span class="hinta ">
+              11,00/ 12,00 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/elmun-vappufanfaari-martti-servo-napander">Elmun vappufanfaari (MARTTI SERVO &amp; NAPANDER)</a>              </div>
+                      
+          <div class="artistit">
+            <a href="https://www.facebook.com/marttiservojanapander" class="artisti">MARTTI SERVO &amp; NAPANDER</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1492">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201297" target="_blank" title="Osta liput: Elmun vappufanfaari (MARTTI SERVO &amp;amp; NAPANDER)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/404452869903265/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1492" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/elmun-vappufanfaari-martti-servo-napander">Elmun vappufanfaari (MARTTI SERVO &amp; NAPANDER)</a></h2>
+  <p>NYT LÄHTEE RUSINATKIN SIMASTA, NIMITTÄIN<br />
+Martti Servo &amp; Napander saattelee tanssin pyörteisiin!
+</p>
+<p>Vappu on ihmisen parasta aikaa ja tänä vuonna on monta hyvää syytä juhlia, nimittäin Martti Servo &amp; Napander saavuttaa huikean 20-vuoden maagisen iän ja kotimaamme Suomi  täyttää 100 vuotta. 
+</p>
+<p>Artistin juhlavuosi käynnistyi  ’Kahdenkympin villitys’ –nimisen kiertueen voimin helmikuun alussa ja luvassa on lisäksi kolme singlejulkaisua heti vuoden 2017 alkutaipaleella. Lopuksi nämä singlet niputetaan yhdeksi vinyylilevyksi, joka julkaistaan loppukeväästä, ai ai, mahoton paikka!
+</p>
+<p>Mutta itse asiaan, Elmun Baarin terassille on tilattu vappulauantaina 29.4. ilta-aurinko ja laseihin kaatuu sujuvasti kuplivaa, harjoitukset ovat jo alkaneet. Oranssin auringon kietoessa juhlaväen syleilyynsä johdattelee Martti Servo &amp; Napander kansan liukuvasti iskelmän sulosointujen aalloille. Ei muuta kuin tervetuloa nautiskelemaan Elmun Vappufanfaaarista, luvassa myös muita yllätyksiä!
+</p>
+<p>Elmun Vappufanfaari la 29.4.2017 @ Nosturi<br />
+MARTTI SERVO &amp; NAPANDER<br />
++ yllätyksiä<br />
+Liput alk. 11,00 € Ticketmasterista<br />
+K18 // ovet klo 20:00</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-14 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/dark-tranguillity-swe"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/aaa_dt.jpg?itok=e58GCxG7" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Mon 1.5.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              30,00/ 32,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/dtofficial/?fref=ts" class="artisti">DARK TRANGUILLITY (SWE)</a>, <a href="https://www.facebook.com/WolfheartRealm" class="artisti">WOLFHEART</a>, <a href="https://www.facebook.com/nailedtoobscurity/" class="artisti">NAILED TO OBSCURITY (GER)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1477">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/199755" target="_blank" title="Osta liput: DARK TRANGUILLITY (SWE) / WOLFHEART / NAILED TO OBSCURITY (GER)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1715790908750793/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1477" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/dark-tranguillity-swe">DARK TRANGUILLITY (SWE) / WOLFHEART / NAILED TO OBSCURITY (GER)</a></h2>
+  <p>Dark Tranquillity (SWE) Nosturissa Vappuna!
+</p>
+<p>Nummirockissa 2016 esiintynyt Göteborgista ponnistava melodisen death metallin järkäle Dark Tranquillity saapuu Suomeen kahdelle klubikeikalle.
+</p>
+<p>Yhtyeen ’Atoma’ -levy on otettu vastaan valtavalla innolla sekä fanien, että medioiden arvioimana. Tämä yhdestoista Dark Tranquillityn studioalbumi sai mm. Imperiumi.net sivustolla täydet pisteet. Lue arvio tästä: http://www.imperiumi.net/index.php?act=albums&amp;id=17175
+</p>
+<p>Liput Helsinkiin myy Ticketmaster.
+</p>
+<p>01.05.2017 – NOSTURI, Helsinki (S/K18)<br />
+Liput 30/ 32 €, Ikäraja S/K18, ovet 19:00.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-15 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/bry-irl"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/bryyy.jpg?itok=uAdASIh6" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Thu 4.5.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              16,50 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/bryontour/" class="artisti">BRY (IRL)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1484">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/artist/nosturi-lippuja/977685" target="_blank" title="Osta liput: BRY (IRL)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/590179427846562/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1484" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/bry-irl">BRY (IRL)</a></h2>
+  <p>BRY KLUBIKEIKALLE HELSINKIIN TOUKOKUUSSA
+</p>
+<p>Viime marraskuussa Twenty One Pilotsin lämppärinä Suomessa vieraillut laulaja-lauluntekijä Bry saapuu keväällä ensimmäiselle klubikeikalleen Suomeen. Irlantilaissyntyinen indie rock -muusikko esiintyy Helsingin Nosturissa torstaina 4. toukokuuta. Liput tulevat myyntiin maanantaina 13. helmikuuta Ticketmasterissa.
+</p>
+<p>Bry, oikealta nimeltään Bryan O’Reilly, on kerännyt itselleen uskollisen kuulijakunnan vain muutamassa vuodessa: YouTubessa musiikkiaan julkaissut artisti lähti kiertämään maailmaa tavoitteenaan soittaa maailman joka kolkassa. Artisti vietti viime vuoden Twenty One Pilotsin lämmittelijänä Emotional Roadshow -maailmankiertueella, joka toi Bryn Suomeenkin esiintymään loppuunmyydylle Jäähallille. Kasvava suosio poiki levytyssopimuksen ja<br />
+“Bry”-nimeä kantava debyyttialbumi julkaistiin viime vuoden marraskuussa. Levyltä on julkaistu jo kaksi singleä, ”Don’t Go Alone” ja ”You’re Alright”.
+</p>
+<p>KEIKKA:<br />
+Bry (IRE)<br />
+To 4.5.2017 Nosturi, Helsinki<br />
+ikärajaton / K-18<br />
+Ovet klo 19
+</p>
+<p>LIPUT:<br />
+Myyntiin ma 13.2.2017 klo 9<br />
+Palvelumaksuineen alkaen 16,50 euroa Ticketmasterista</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-16 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/mosh-vol-2-matter-summerheat-0"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/mosh_nosturi_1440_600.jpg?itok=-ccfZuQD" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 5.5.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              33,00/ 22,50 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/mosh-vol-2-matter-summerheat-0">M.O.S.H. Vol. 2: Matter Of Summerheat</a>              </div>
+                      
+          <div class="artistit">
+            <a href="https://www.facebook.com/inotherclimes/" class="artisti">IN OTHER CLIMES (FRA)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1451">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"><a href="https://www.facebook.com/MOSHKIALAMOSHAAJOSETOSAA/?fref=ts" target="_blank" title="[node:title">Linkki</a></li>              <li class="liput"><div class="item-list"><ul><li class="first"><a href="http://www.ticketmaster.fi/event/mosh-perjantai-lippuja/198251" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+<li class="last"><a href="http://www.ticketmaster.fi/event/mosh-2paivaa-lippuja/198249" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1841494049468679/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1451" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/mosh-vol-2-matter-summerheat-0">M.O.S.H. Vol. 2: Matter Of Summerheat</a></h2>
+  <p>M.O.S.H. Vol. 2: Matter Of Summerheat
+</p>
+<p>M.O.S.H. -festivaali tulee jälleen! Tapahtuma järjestetään 5.-6.5.2017 ja kantaa nyt ylpeänä nimeä M.O.S.H. Vol.2: Matter Of Summer Heat. Kaksipäiväinen klubifestivaali pidetään jo toista kertaa samalla areenalla kuin edellinenkin, eli meren äärellä, tapahtuma-areena Nosturissa, kauniissa Helsingin Hietalahdessa.
+</p>
+<p>Kyseessä on ohjelma- ja tapahtumatoimisto Rockin’ Hot Mama Agency:n lanseeraama M.O.S.H.K.I. -tapahtuma, joka keskittyy pääasiallisesti hardcore- ja punk-keikkojen järjestämiseen muita M.O.S.H.attavia musiikin lajeja unohtamatta. Tavoitteena on tuoda Helsinkiin hiukan suuremman mittakaavan punk-tapahtumia kovimpien bändien yksittäisiä keikkoja unohtamatta.
+</p>
+<p>Toukokuussa Nosturin lavalle nousee yhteensä 10 ajankohtaista esiintyjää. Mukaan on saatu todella kovia kotimaisia hardcore- ja punkbändejä. Perjantain pääesiintyjäksi on kiinnitetty ranskalainen In Other Climes. In Other Climes on ryhmä punkkareita, jotka soittavat metallivaikutteista hardcorea trash- asenteella. 
+</p>
+<p>”YKSI  ELÄMÄ, YKSI MAHDOLLISUUS, MITÄÄN EN VITTU KADU!”
+</p>
+<p>Youtube – In Other Climes:<br />
+https://www.youtube.com/watch?v=KpctgcyKJOs
+</p>
+<p>Facebook-event:<br />
+https://www.facebook.com/events/1841494049468679/
+</p>
+<p>Facebook-sivu:
+</p>
+<p>Älä M.O.S.H.aa jos et osaa!</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-17 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/mosh-vol-2-matter-summerheat"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/mosh_nosturi_1440_600.jpg?itok=-ccfZuQD" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka ">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 6.5.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              33,00/ 22,50 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/mosh-vol-2-matter-summerheat">M.O.S.H. Vol. 2: Matter Of Summerheat</a>              </div>
+                      
+          <div class="artistit">
+                      </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1450">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first"><a href="http://www.ticketmaster.fi/event/mosh-lauantai-lippuja/198255" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+<li class="last"><a href="http://www.ticketmaster.fi/event/mosh-2paivaa-lippuja/198249" target="_blank" title="Osta liput: M.O.S.H. Vol. 2: Matter Of Summerheat">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1841494049468679/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1450" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/mosh-vol-2-matter-summerheat">M.O.S.H. Vol. 2: Matter Of Summerheat</a></h2>
+  <p>M.O.S.H. Vol. 2: Matter Of Summerheat
+</p>
+<p>M.O.S.H. -festivaali tulee jälleen! Tapahtuma järjestetään 5.-6.5.2017 ja kantaa nyt ylpeänä nimeä M.O.S.H. Vol.2: Matter Of Summer Heat. Kaksipäiväinen klubifestivaali pidetään jo toista kertaa samalla areenalla kuin edellinenkin, eli meren äärellä, tapahtuma-areena Nosturissa, kauniissa Helsingin Hietalahdessa.
+</p>
+<p>Kyseessä on ohjelma- ja tapahtumatoimisto Rockin’ Hot Mama Agency:n lanseeraama M.O.S.H.K.I. -tapahtuma, joka keskittyy pääasiallisesti hardcore- ja punk-keikkojen järjestämiseen muita M.O.S.H.attavia musiikin lajeja unohtamatta. Tavoitteena on tuoda Helsinkiin hiukan suuremman mittakaavan punk-tapahtumia kovimpien bändien yksittäisiä keikkoja unohtamatta.
+</p>
+<p>Toukokuussa Nosturin lavalle nousee yhteensä 10 ajankohtaista esiintyjää. Mukaan on saatu todella kovia kotimaisia hardcore- ja punkbändejä. Perjantain pääesiintyjäksi on kiinnitetty ranskalainen In Other Climes. In Other Climes on ryhmä punkkareita, jotka soittavat metallivaikutteista hardcorea trash- asenteella.
+</p>
+<p>”YKSI ELÄMÄ, YKSI MAHDOLLISUUS, MITÄÄN EN VITTU KADU!”
+</p>
+<p>Youtube – In Other Climes:<br />
+https://www.youtube.com/watch?v=KpctgcyKJOs
+</p>
+<p>Facebook-event:<br />
+https://www.facebook.com/events/1841494049468679/</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-18 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/rahina-special-bradi-spekti-uniikki-nelli-matula"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/trahina.jpg?itok=u-eIeBfo" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 12.5.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              17,50/ 18,00 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/rahina-special-bradi-spekti-uniikki-nelli-matula">Rähinä Special (BRÄDI, SPEKTI, UNIIKKI, NELLI MATULA)</a>              </div>
+                      
+          <div class="artistit">
+            <a href="http://www.rahina.com/artistit/bradi" class="artisti">BRÄDI</a>, <a href="http://www.rahina.com/artistit/spekti" class="artisti">SPEKTI</a>, <a href="http://www.rahina.com/artistit/uniikki" class="artisti">UNIIKKI</a>, <a href="http://rahina.com/artist/nelli-matula/" class="artisti">NELLI MATULA</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1501">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201875" target="_blank" title="Osta liput: Rähinä Special (BRÄDI, SPEKTI, UNIIKKI, NELLI MATULA)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://facebook.com/events/417589918573802/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1501" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/rahina-special-bradi-spekti-uniikki-nelli-matula">Rähinä Special (BRÄDI, SPEKTI, UNIIKKI, NELLI MATULA)</a></h2>
+  <p>RÄHINÄ SPECIAL TOUKOKUUSSA NOSTURILLA: Brädi, Spekti, Uniikki &amp; Nelli Matula
+</p>
+<p>Yhdessä Brädi, Spekti ja Uniikki muodostavat timanttisen kokoonpanon nimeltään Rähinä Special. Artistit esittävät sekä omia hittibiisejään (mm. “Macho Fantastico”, “Lämpöö”, “Pätkätöis”) että yhteistä tuotantoa, johon kuuluvat esimerkiksi huippusuositut singlet ”Rotko” ja ”Pojat On Poikii”.  Tällä kertaa keikalla on mukana myös Rähinä Recordsin uusin artistisainaus Nelli Matula. Hän on sekä mukana feattaamassa kappaleissa että esittää omia hurjaa suosiota saavuttaneita biisejään (“Kato mua” ja “Lemmikki”). Tämä show ei takuulla jätä ketään kylmäksi! Rähinä Special Nosturilla perjantaina 12. päivä toukokuuta. Liput ennakkoon 17.50 € Tickemasterista. Lipunmyynti alkaa perjantaina 24.2. Keikka on sallittu mutta tilassa on rajattu anniskelualue täysi-ikäisille.
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-19 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/decapitated-pl-vader-pl-thy-disease-pl"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pikku_jee.jpg?itok=WjITieC0" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Tue 16.5.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              Early Bird 28,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/decapitated/" class="artisti">DECAPITATED (PL)</a>, <a href="https://www.facebook.com/vader/" class="artisti">VADER (PL)</a>, <a href="https://www.facebook.com/thydisease" class="artisti">THY DISEASE (PL)</a>          </div>
+          <div class="summary">
+            <p>Early bird liput myynnissä 17.3. asti!</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1508">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/202721" target="_blank" title="Osta liput: DECAPITATED (PL) / VADER (PL) / THY DISEASE (PL)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1250430568406630/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1508" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/decapitated-pl-vader-pl-thy-disease-pl">DECAPITATED (PL) / VADER (PL) / THY DISEASE (PL)</a></h2>
+  <p>VADER JA DECAPITATED KOLMELLE KEIKALLE SUOMEEN<br />
+Death metalin suurnimet kiertävät toukokuussa Pohjois-Eurooppaa
+</p>
+<p>Äärimetallin ystäville on luvassa aurinkoinen loppukevät: Puolalaiset death metal -yhtyeet Vader ja Decapitated kiertävät toukokuussa Suomea kolmen keikan verran.
+</p>
+<p>Vader on legenda! Tämä Puolan Olsztynistä kotoisin oleva yhtye on perustettu 1983 – samana vuonna kuin muut death metal -pioneerit Death ja Possessed. Vaderilla kesti kymmenen vuotta saada ensimmäinen pitkäsoittonsa julki: vuoden 1992 albumi The Ultimate Incantation onkin yksi genren klassikoista. Ja Vader jaksaa: yhtyeen uusin albumi The Empire julkaistiin loppuvuodesta 2016.
+</p>
+<p>Puolan Kronsossa vuonna 1996 perustettu Decapitated on eräs modernin death metalin arvostetuimmista nimistä. Yhtyeen musiikissa yhdistyvät blastbeat-pitoinen mutta groovaava death ja tyylitajuinen melodisuus ainutlaatuisella tavalla. Decapitatedkin on ehtinyt moneen: bändi on kiertänyt muun muassa Children of Bodomin kanssa Eurooppaa ja At The Gatesin kanssa Pohjois-Amerikkaa. Suomeen tämä death metal -innovaattori saadaan, yllättävää kyllä, nyt ensimmäistä kertaa.
+</p>
+<p>Vaderin ja Decapitatedin kanssa kiertää krakovalainen Thy Disease, jonka modernissa ilmaisussa yhdistyvät industria-tunnelmat, death metalin julmuus ja groovaava tarttuvuus.
+</p>
+<p>Crushing The North -kiertueen toteuttaa helsinkiläinen Elektrik Products -ohjelmatoimisto yhteistyössä Enslain Magazinen kanssa.
+</p>
+<p>Ti 16.5. Helsinki, Nosturi<br />
+Liput:<br />
+Early bird 28 € (17.3. asti)<br />
+Ennakko 31 €<br />
+Ovelta 35 €
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-20 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/rocknroll-circus"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/node_iso.jpg?itok=NeFrzX8e" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 20.5.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              19,50/ 20,00 €            </span>
+          </div>
+                                    <div class="keikka_otsikko ">
+                <a href="/keikat/rocknroll-circus">&quot;Rock´n´roll Circus&quot;</a>              </div>
+                      
+          <div class="artistit">
+            <a href="https://www.facebook.com/melroseofficial/" class="artisti">MELROSE</a>, <a href="https://www.facebook.com/francineofficial" class="artisti">FRANCINE</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1490">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/201125" target="_blank" title="Osta liput: &amp;quot;Rock´n´roll Circus&amp;quot;">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1490" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/rocknroll-circus">&quot;Rock´n´roll Circus&quot;</a></h2>
+  <p>ROCKIN LAATUTAKUU: MELROSE JA FRANCINE NOSTURILLA TOUKOKOUUSSA
+</p>
+<p>Rock´n rollin ja rockabillyn konkarit Melrose ja Francine nähdään toukokuun lopussa Nosturilla. Yhtyeet ovat tahkonneet uriaan jo kolmenkymmenen vuoden ajan, joten yhteenhioutuneen loistokasta kuultavaa nämä orkesterit tarjoilevat yleisölleen 20.5. Melrose palasi keikkatauoltaan muutama vuosi sitten ja julkaisi samalla viimeisimmän studioalbuminsa ”Got It Made”. Francine on puuskuttanut reippaalla tahdilla eteenpäin koko 30-vuotiaan taipaleensa ja uutta potkua antoi viime vuonna yhtyeeseen palannut rumpali Alec Hirst-Gee. 
+</p>
+<p>Liput keikalle tulevat myyntiin Ticketmasteriin torstaina 16.2. Keikka on sallittu, mutta tilasta löytyy rajattu anniskelualue.
+</p>
+<p>LA 20.5.2017 @ Nosturi, Helsinki<br />
+"Rock´n´roll Circus"<br />
+MELROSE &amp; FRANCINE<br />
+S/K18, ovet 20:00
+</p>
+<p>Liput ennakkoon 19,50 € sis. palvelumaksu.</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-21 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/machinae-supremacy-swe-blind-channel-one-morning-left"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/machinae.jpg?itok=vYI9thbw" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 27.5.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              20,50/ 21,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://www.machinaesupremacy.com/" class="artisti">MACHINAE SUPREMACY (SWE)</a>, <a href="https://www.facebook.com/BlindChannelBand" class="artisti">BLIND CHANNEL</a>, <a href="http://www.onemorningleft.com/" class="artisti">ONE MORNING LEFT</a>          </div>
+          <div class="summary">
+            <p>Ennakkoliput tulevat myyntiin pe 20.1.2017</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1461">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/199357" target="_blank" title="Osta liput: MACHINAE SUPREMACY (SWE) / BLIND CHANNEL / ONE MORNING LEFT">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/569692433226954/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1461" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/machinae-supremacy-swe-blind-channel-one-morning-left">MACHINAE SUPREMACY (SWE) / BLIND CHANNEL / ONE MORNING LEFT</a></h2>
+  <p>MACHINAE SUPREMACY (SWE)<br />
+“Into the Night World Tour 2017”
+</p>
+<p>Videopelimetallisoturi toukokuussa Suomeen<br />
+Machinae Supremacy nähdään Kuopiossa, Tampereella, Joensuussa ja Helsingissä.
+</p>
+<p>Useasti meillä vieraillut ja täällä vahvassa suosiossa kylpevä Machinae Supremacy tuo jälleen Commodore 64:sta pulppuavan metallinsa Suomeen. Vuonna 2000 Luulajassa perustettu orkesteri soittaa toukokuun lopulla Kuopiossa, Tampereella, Joensuussa ja Helsingissä.
+</p>
+<p>Machinae Supremacy julkaisi seitsemännen albuminsa joulukuussa 2016. Into the Night World liikkuu laajasti metallin tyylisuunnissa ja maustaa kokonaisuutta chiptune-soundeilla.
+</p>
+<p>Heavysta poppia ja popista heavya tekevä bändi on vahvasti omalla tiellään ja se on huomattu kaikkialla maailmassa. Tällä hetkellä Machinae Supremacy kiertää Yhdysvalloissa, josta Into the Night World Tour 2017 siirtyy keväällä Euroopan puolelle.
+</p>
+<p>Tampereella, Joensuussa ja Helsingissä lämppäribändin tehtävistä vastaa One Morning Left. Metalcorea elektronisin maustein soittava yhtye julkaisi kolmannen studioalbuminsa Metalcore Superstars vuosi takaperin.
+</p>
+<p>Suomen kuumimpiin nouseviin nimiin lukeutuva, violent-poppia soittavaa Blind Channel on mukana Helsingin keikalla. Blind Channelin debyytti Revolutions julkaistiin lokakuussa: yhtye on saanut suurta huomio mediassa kotimaassa ja ulkomailla erinomaisesta levystä ja live-keikoista.
+</p>
+<p>La 27.5.2017 Helsinki, Nosturi<br />
+Machinae Supremacy (SWE)<br />
+Blind Channel<br />
+One Morning Left<br />
+S/K18, ovet 20:00, liput alk. 20,50 € sis. palvelumaksu.
+</p>
+<p>http://machinaesupremacy.com<br />
+www.nem.fi
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-22 views-row-even">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/marky-ramones-blitzkrieg-usa"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/markydrumsb.jpg?itok=k2MHKQvE" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Sat 10.6.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              27,00/ 28,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://www.markyramone.com/" class="artisti">MARKY RAMONE’S BLITZKRIEG (USA)</a>          </div>
+          <div class="summary">
+            <p>Liput tulevat myyntiin perjantaina 13.1. klo 09:00</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1453">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/198487" target="_blank" title="Osta liput: MARKY RAMONE’S BLITZKRIEG (USA)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/1632667587036612/" class="facebook" target="_blank">Facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1453" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/marky-ramones-blitzkrieg-usa">MARKY RAMONE’S BLITZKRIEG (USA)</a></h2>
+  <p>Marky Ramone’s Blitzkrieg Suomeen<br />
+Salamasotaa käydään Tampereella ja Helsingissä kesäkuussa.
+</p>
+<p>Ramones-yhtyeessä vuosina 1978-1983 ja 1987-1996 rumpuja soittanut Marky Ramone tuo Blitzkrieg-yhtyeensä kesän alussa Suomeen. Marky Ramone’s Blitzkriegin viime vuonna alkanut 40 Years of Punk -kiertue saa luonnollista jatkoa Tampereen klubilla 9. kesäkuuta ja seuraavana iltana Helsingin Nosturissa.
+</p>
+<p>Ramonesin iättömiä hittejä ja muuta reipasta punkmateriaalia tarjoava Marky Ramone’s Blitzkrieg vieraili Suomessa viimeksi vuonna 2013. Rock’n’Roll Hall of Fameen kuuluva ja Grammy-palkinnon elämäntyöstään saanut rumpali on lajinsa viimeisiä: tänä vuonna 61 vuotta täyttävä legenda painaa eteenpäin, vaikka isolla joukolla entisistä Ramones-miehistä on jo oma pala maata hautausmaalta.
+</p>
+<p>MARKY RAMONE’S BLITZKRIEG (USA)<br />
+Pe 9.6.2017 Tampere, Klubi (liput 24 e + toim.kulut Tiketistä)<br />
+La 10.6.2017 Helsinki, Nosturi (liput 24 e + toim.kulut Ticketmasterista)<br />
+Ennakkoliput tulevat myyntiin pe 13.1. klo 9.
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-23 views-row-odd">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/matenrou-opera-jap"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/mo_main.jpg?itok=W89CnNxH" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Fri 30.6.2017</span>            <div class="field-content"><span class="date-display-single">19:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              36,00€            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="http://matenrou-opera.jp/en/" class="artisti">MATENROU OPERA (JAP)</a>          </div>
+          <div class="summary">
+                      </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1482">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/200489" target="_blank" title="Osta liput: MATENROU OPERA (JAP)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1482" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/matenrou-opera-jap">MATENROU OPERA (JAP)</a></h2>
+  <p>MATENROU OPERA EUROOPAN KIERTUEELLE 
+</p>
+<p>Japanilainen visual kei bändi Matenrou Opera lähtee kiertämään Eurooppaa pitkän tauon jälkeen! Tämän vuonna 2007 perustetun yhtyeen musiikki koostuu pääasiassa symphonisesta metallista ja heidän lahjakkaan vokalistinsa Sonon vaikuttava ääni tuo kappaleisiin hyvin persoonallisen vivahteen joka takuulla on kuulemisen arvoinen! 
+</p>
+<p>Viimeeksi Matenrou Opera nähtiin Euroopassa vuonna 2008 yhdessä visual kein keulanimen Versaillesin kanssa, joten heidän paluunsa on varmasti odotettu! 
+</p>
+<p>Suomessa yhtye esiintyy 30.6.2017, keikkapaikkana toimii Nosturi.<br />
+------<br />
+Lipunmyynti alkaa 10.2. klo 11AM Suomen aikaan!<br />
+Tarjolla on kahta eri lipputyyppiä:
+</p>
+<p>Peruslippu alkaen 36,00 €<br />
+(HUOM B7Klanin sivuilla myynnissä rajoitettu erä VIP lippuja)
+</p>
+<p>Ovet VIP 18:00<br />
+Muille 19:00
+</p>
+<p>http://www.b7klan.com/<br />
+http://jrocksuomi.fi/<br />
+http://matenrou-opera.jp/en/</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+      <div class="views-row views-row-24 views-row-even views-row-last">
+        <div class="row keikka ">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="keikkakuva">
+                <a href="/keikat/dram-usa-0"><img src="http://elmu.fi/sites/default/files/styles/keikka_etusivu/public/keikkakuvat/elmu_pieni_dram_0_0.jpg?itok=T7Wsy8Zf" width="800" height="400" /></a>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns">
+
+      <div class="keikkainfo">
+        <div class="keikka artisteja">
+          <div class="tiedot">
+            <span class="date-display-single">Thu 7.12.2017</span>            <div class="field-content"><span class="date-display-single">20:00</span></div>,
+            S/K18,
+            <span class="hinta ">
+              22,50/ 23,00 €            </span>
+          </div>
+                                
+          <div class="artistit">
+            <a href="https://www.facebook.com/bigbabydram/?fref=ts" class="artisti">D.R.A.M. (USA)</a>          </div>
+          <div class="summary">
+            <p>UUSI KEIKKAPÄIVÄ!<br />
+Helmikuun keikalle ostetut liput käyvät sellaisenaan uudelle päivämäärälle!</p>
+          </div>
+
+
+          <div class="linkit">
+            <ul>
+              <li class="lisatiedot"><a href="#" data-reveal-id="lisatiedot-1487">Lisätiedot</a></li>
+              <li class="tapahtumalinkki"></li>              <li class="liput"><div class="item-list"><ul><li class="first last"><a href="http://www.ticketmaster.fi/event/195769" target="_blank" title="Osta liput: D.R.A.M. (USA)">Osta lippuja</a></li>
+</ul></div></li>              <li class="some"><a href="https://www.facebook.com/events/667002163459275/" class="facebook" target="_blank">facebook</a></li>            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="lisatiedot-1487" class="reveal-modal keikka-reveal" data-reveal>
+  <h2><a href="/keikat/dram-usa-0">D.R.A.M. (USA)</a></h2>
+  <p>D.R.A.M.:IN HELSINGIN KEIKKA SIIRTYY JOULUKUULLE
+</p>
+<p>Alun perin helmikuulle suunniteltu keikka Helsingin Nosturissa siirtyy joulukuun 7. päivälle artistin levytys- ja kiertueaikataulumuutosten vuoksi. Keikkapaikka säilyy samana ja jo ostetut liput käyvät sellaisenaan uudelle keikkapäivämäärälle.  
+</p>
+<p>Virginiasta lähtöisin oleva rap-artisti, laulaja ja tuottaja D.R.A.M. (oikealta nimeltään Shelley Marshaun Massenburg-Smith) julkaisi elokuussa kriitikoiden ylistämän debyyttialbuminsa ”Big Baby D.R.A.M.”, jonka taustalla on maineikkaita tuottajia ja vierailevia artisteja (Erykah Badu, Young Thug). Artistin popahtava latinalaistyylinen soundi ja terävät riimit ajavat hip hopia uudelle aikakaudelle.
+</p>
+<p>KEIKKA:<br />
+D.R.A.M. (USA)<br />
+To 7.12.2017 Nosturi, Helsinki UUSI KEIKKAPÄIVÄMÄÄRÄ!<br />
+Ovet klo 20, ikärajaton / K-18 rajattu anniskelualue
+</p>
+<p>LIPUT:<br />
+Palvelumaksuineen alkaen 22,50 euroa Ticketmasterista
+</p>
+<p>LISÄTIEDOT:<br />
+Live Nation Finland<br />
+-	Promoottori: Valter Filosof<br />
+-	Tiedotus: Maritta Kettunen, puh. 09 856 73 453, maritta.kettunen@livenation.fi<br />
+-	Pressikuva ja media-akkreditoinnit: http://press.livenation.fi<br />
+www.bigbabydram.com<br />
+www.livenation.fi
+</p>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+
+    </div>
+  
+  </div>
+
+
+
+
+
+
+</div>
+      <!-- END TAPAHTUMA -->
+    </div>
+
+    <div class="sivupalkki hide-for-small medium-4 large-4 columns">
+      <div class="lohkot">
+      <!-- lohkot -->
+      <div class="view view-etusivun-lohkot view-id-etusivun_lohkot view-display-id-etu_nosturi_elmu_fi view-dom-id-">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content">INFO</h3>  </div>  
+  <div class="views-field views-field-field-block-teksti">        <div class="field-content"><p>ETEISPALVELUMAKSU 3,00€<br /><strong>(Pssst! Ei peritä ELMU ry:n jäseniltä)</strong></p>
+<p> </p>
+<p>LIPUT ENNAKKOON:<br /><a href="http://www.ticketmaster.fi/venue/nosturi-helsinki-lippuja/nos/306"><img alt="" src="/sites/default/files/inline_kuvat/ticketmaster_whiteonblack_logo.jpg" style="height:50px; width:133px" /></a></p>
+<p>LÖYDÄ MEIDÄT:</p>
+<p><a href="https://www.facebook.com/nosturivenue/"><img alt="" src="/sites/default/files/inline_kuvat/thumb_nayttokuva_2016-9-8_kello_12.14.29.png" style="height:50px; width:50px" /></a>   <a href="https://www.instagram.com/nosturivenue/"><img alt="" src="/sites/default/files/inline_kuvat/thumb_nayttokuva_2016-9-8_kello_12.10.38.png" style="height:50px; width:50px" /></a>   <a href="https://www.snapchat.com/"><img alt="" src="/sites/default/files/inline_kuvat/snap.png" style="height:50px; width:50px" /></a>  <a href="http://www.eventmore.io/app/nosturi/"><img alt="" src="/sites/default/files/inline_kuvat/medium_eventmore.png" style="height:50px; width:50px" /></a></p>
+</div>  </div>  
+  <div class="views-field views-field-field-block-kuva">        <div class="field-content"></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <h3 class="field-content">ELMU FESTARIMATKAT</h3>  </div>  
+  <div class="views-field views-field-field-block-teksti">        <div class="field-content"><p><span style="font-size:16px"><strong><span style="font-size:14px">TUTUSTU ELMUN FESTARIMATKOIHIN </span></strong></span><br /><a href="http://matkailu.elmu.fi">Täältä!</a></p>
+<p> </p>
+<p>
+<span style="font-size:14px"><strong>Wacken Open Air 2017</strong></span><br /><a href="http://matkailu.elmu.fi/wacken-open-air">Ilmoittautumiset mukaan matkalle alkaneet!</a></p>
+</div>  </div>  
+  <div class="views-field views-field-field-block-kuva">        <div class="field-content"></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>      </div>
+
+      <!--- END lohkot -->
+
+      <!--- uutiset -->
+      <div class="uutiset">
+        <h3 class="otsikko">UUTISET</h3>
+        <div class="view view-uutiset view-id-uutiset view-display-id-block_uutiset view-dom-id-25b8a5f3d77bb411494c4a73b9b32182">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <span class="views-field views-field-title">        <span class="field-content"><a href="/uutiset/dramin-keikka-siirtyy-joulukuulle">D.R.A.M:in keikka siirtyy joulukuulle</a></span>  </span>  
+  <span class="views-field views-field-created">        <span class="field-content">15.2.</span>  </span>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/uutiset/dramin-keikka-siirtyy-joulukuulle">Lue lisää</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+      
+  <span class="views-field views-field-title">        <span class="field-content"><a href="/uutiset/femmagaala-palaa-nosturille">FEMMAGAALA PALAA NOSTURILLE! </a></span>  </span>  
+  <span class="views-field views-field-created">        <span class="field-content">26.1.</span>  </span>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/uutiset/femmagaala-palaa-nosturille">Lue lisää</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <p><a href="/uutiset">Katso kaikki uutiset</a></p>
+    </div>
+  
+  
+</div>      </div>
+
+
+      <!--- END uutiset -->
+
+      <!--- uutiset -->
+      <div class="seuraa">
+        <h3 class="otsikko">SEURAA NOSTURIA</h3>
+        <ul class="seuraalista">
+          <li><a class="link_icon twitter" href="https://twitter.com/Nosturi">twitter</a></li>
+          <li><a class="link_icon facebook" href="https://www.facebook.com/nosturivenue">facebook</a></li>
+          <li><a class="link_icon instagram" href="http://www.oninstagram.com/profile/nosturivenue">instagram</a></li>
+          <li><a class="link_icon rss" href="/keikat.rss">rss</a></li>
+        </ul>
+        <h3 class="uutiskirje">TILAA UUTISKIRJE</h3>
+        <form class="mailchimp-signup-subscribe-form" action="/" method="post" id="mailchimp-signup-subscribe-block-uutiskirjeen-tilaus-form" accept-charset="UTF-8"><div><div class="mailchimp-signup-subscribe-form-description"></div><div id="mailchimp-newsletter-ea564a6a1e-mergefields" class="mailchimp-newsletter-mergefields"><div class="form-item form-type-emailfield form-item-mergevars-EMAIL">
+  <label for="edit-mergevars-email">Email Address <span class="form-required" title="This field is required.">*</span></label>
+ <input type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="128" class="form-text form-email required" />
+</div>
+</div><input type="hidden" name="form_build_id" value="form-K3zz1XzcjwAcVLxFJn0y46iudvUpmvPXk8889K4d0Wg" />
+<input type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_uutiskirjeen_tilaus_form" />
+<button class="secondary button radius form-submit" id="edit-submit" name="op" value="Tilaa" type="submit">Tilaa</button>
+</div></form>
+      </div>
+      <!--- END uutiset -->
+
+    </div>
+
+  </div>
+</div>
+
+  <!--  END TAPAHTUMAT & INFO -->
+
+  <!--/.main region -->
+</main>
+<!--/.main-->
+
+<div class="push"></div>
+
+<!-- FOOTER -->
+<div class="row">
+  <div class="small-12 columns footer">
+    <div class="small-12 medium-6 large-8 columns left"><p>ELMU RY / NOSTURI - TELAKKAKATU 8 - FIN-00150 HELSINKI - +358 9 6811880</p></div>
+    <div class="small-12 medium-6 large-4 columns right"><p>YHTEISTYÖSSÄ: </p><img
+        src="/sites/default/themes/elmu_foundation/images/kulttuurikeskus.png"/></div>
+  </div>
+</div>
+<!-- END FOOTER -->
+
+</div>
+<!--/.page -->
+
+
+
+  <script src="http://elmu.fi/sites/default/files/js/js_5idECjjAo-X5YdkT65CaIiodkWmZlZv-WjSkHlWhoYk.js"></script>
+    <script>
+    (function ($, Drupal, window, document, undefined) {
+      $(document).foundation();
+    })(jQuery, Drupal, this, this.document);
+  </script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2fe8d824d8","applicationID":"20999011","transactionName":"MgRWZRYDX0YDUkINXAtOdVIQC15bTUZTDVQNFWtBBQVUagZUUAVGCRU=","queueTime":0,"applicationTime":389,"atts":"HkNVE14ZTEg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

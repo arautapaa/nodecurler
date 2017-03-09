@@ -1,0 +1,20 @@
+{
+  "name": "nodecurler",
+  "version": "0.0.1",
+  "description": "Basic curler app that can scrape stuff from the internet",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^2.1.5",
+    "cheerio": "^0.22.0",
+    "hapi": "^16.1.0",
+    "hapi-mongodb": "^6.2.1",
+    "inert": "^4.1.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "(sudo) NODE_ENV=development nodejs app.js"
+  },
+  "author": "Antti Rautapää",
+  "license": "ISC"
+}

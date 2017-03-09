@@ -1,0 +1,16 @@
+json={
+	"name" : "Tanssisali Lutakko",
+	"description" : "Website for famous venue",
+	"url" : "http://localhost:7777/jelmu.html", // locally saved html source of the JELMU Ry site (http://jelmu.net)
+	"entryselector" : ".contain ul[role=upcoming-events] li",
+	"attributes" : [{
+		"name" : "artist",
+		"selector" : "a span"
+	}, {
+		"name" : "date",
+		"selector" : "strong[role=date]"
+	}, {
+		"name" : "price",
+		"selector" : "div[role=tickets] strong"
+	}]
+}

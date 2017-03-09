@@ -1,0 +1,13 @@
+{
+	"name" : "sitename",
+	"description" : "site description",
+	"url" : "http://url.org",
+	"entryselector" : ".entry",
+	"attributes" : [{
+		"name" : "name",
+		"selector" : ".name"
+	}, {
+		"name" : "price",
+		"selector" : ".price"
+	}]
+}
